@@ -1,0 +1,59 @@
+/* colores para textos y otros */
+.amarillo{
+    color: #F7A908 !important;
+}
+.azul-claro{
+    color: #4A0EC4 !important;
+}
+.turquesa{
+    color: #00FADF !important;
+}
+.azul-oscuro{
+    color: #320E8B !important;
+}
+/* Background */
+.bg-amarillo{
+    background-color: #F7A908 !important;
+}
+.bg-azul-claro{
+    background-color: #4A0EC4 !important;
+}
+.bg-turquesa{
+    background-color: #00FADF !important;
+}
+.bg-azul-oscuro{
+    background-color: #320E8B !important;
+}
+/* /////////////////////////////////////////////////////// */
+.p300{
+    font-weight: 300 !important;
+}
+.p400{
+    font-weight: 400 !important;
+}
+.p500{
+    font-weight: 500 !important;
+}
+.p600{
+    font-weight: 600 !important;
+}
+.p700{
+    font-weight: 700 !important;
+}
+.p800{
+    font-weight: 800 !important;
+}
+
+.titulo-1{
+    font-size: 1.7rem; 
+}
+
+header{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    height: 44.5rem;
+}
+
+.banner{
+
+}
