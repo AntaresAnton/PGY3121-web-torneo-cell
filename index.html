@@ -10,13 +10,13 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style/style.css">
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -49,7 +49,7 @@
     </div>
 
   </header>
-    <!-- fin del header -->
+  <!-- fin del header -->
 
   <main>
     
@@ -58,33 +58,56 @@
             <div class="row">
                 <p class="text-uppercase text-center display-4 p600 amarillo pb-4">personajes</p>
 
-
-                <!-- incio perfil personaje -->
+                <!-- inicio perfil personaje -->
                 <div class="col-md-4 text-center py-4">
-                        <div class="p-b2"><!-- color azul claro -->
-                            <img class="circulo" src="https://via.placeholder.com/300" alt="personaje">
-                        </div>
-                        <p class="py-4 display-6 text-uppercase amarillo p600">loco rene <br> <span class="turquesa">puente</span></p>
+                    <div class="p-b2"><!-- color azul claro -->
+                        <img class="circulo" src="https://via.placeholder.com/300" alt="personaje">
+                    </div>
+                    <p class="py-4 display-6 text-uppercase amarillo p600">loco rene <br> <span class="turquesa">puente</span></p>
+                    <div class="star-rating">
+                        <i class="fa fa-star amarillo"></i>
+                        <i class="fa fa-star amarillo"></i>
+                        <i class="fa fa-star amarillo"></i>
+                        <i class="fa fa-star amarillo"></i>
+                        <i class="fa fa-star-half-o amarillo"></i>
+                    </div>
+                    <p class="text-light">Habilidad especial: Puente loco</p>
                 </div>
                 <!-- fin perfil personaje -->
 
-                <!-- incio perfil personaje -->
+                <!-- inicio perfil personaje -->
                 <div class="col-md-4 text-center py-4">
                     <div class="p-b2"><!-- color azul claro -->
                         <img class="circulo" src="https://via.placeholder.com/300" alt="personaje">
                     </div>
                     <p class="py-4 display-6 text-uppercase amarillo p600">samurai de <br> <span class="turquesa">pudahuel</span></p>
-            </div>
-            <!-- fin perfil personaje -->
-
-            <!-- incio perfil personaje -->
-            <div class="col-md-4 text-center py-4">
-                <div class="p-b2"><!-- color azul claro -->
-                    <img class="circulo" src="https://via.placeholder.com/300" alt="personaje">
+                    <div class="star-rating">
+                        <i class="fa fa-star amarillo"></i>
+                        <i class="fa fa-star amarillo"></i>
+                        <i class="fa fa-star amarillo"></i>
+                        <i class="fa fa-star amarillo"></i>
+                        <i class="fa fa-star-o amarillo"></i>
+                    </div>
+                    <p class="text-light">Habilidad especial: Corte samurai</p>
                 </div>
-                <p class="py-4 display-6 text-uppercase amarillo p600">vendedor <br> <span class="turquesa">de leña</span></p>
-        </div>
-        <!-- fin perfil personaje -->
+                <!-- fin perfil personaje -->
+
+                <!-- inicio perfil personaje -->
+                <div class="col-md-4 text-center py-4">
+                    <div class="p-b2"><!-- color azul claro -->
+                        <img class="circulo" src="https://via.placeholder.com/300" alt="personaje">
+                    </div>
+                    <p class="py-4 display-6 text-uppercase amarillo p600">vendedor <br> <span class="turquesa">de leña</span></p>
+                    <div class="star-rating">
+                        <i class="fa fa-star amarillo"></i>
+                        <i class="fa fa-star amarillo"></i>
+                        <i class="fa fa-star amarillo"></i>
+                        <i class="fa fa-star-half-o amarillo"></i>
+                        <i class="fa fa-star-o amarillo"></i>
+                    </div>
+                    <p class="text-light">Habilidad especial: Lanzamiento de leña</p>
+                </div>
+                <!-- fin perfil personaje -->
 
                 <div class="texto-grande">
                     <p class="text-center text-uppercase p800 display-1">personajes</p>
@@ -94,12 +117,394 @@
         </div>
     </div>
 
+<!-- Sección de Bracket del Torneo -->
+<section id="tournament-bracket" class="py-5 personajes">
+  <div class="container">
+      <h2 class="text-center text-uppercase amarillo p600 pb-4">Bracket del Torneo</h2>
+      
+      <div class="bracket-controls d-flex justify-content-between align-items-center mb-4">
+          <div class="btn-group" role="group" aria-label="Bracket View">
+              <button type="button" class="btn btn-outline-light active" id="compactView">Compacto</button>
+              <button type="button" class="btn btn-outline-light" id="detailedView">Detallado</button>
+          </div>
+          <button class="btn btn-outline-light" id="downloadBracket">
+              <i class="fa fa-download me-2"></i>Descargar Bracket
+          </button>
+      </div>
+
+      <div class="bracket-round row" data-round="1">
+        <h3 class="round-title turquesa col-12 mb-4">Cuartos de Final</h3>
+        
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card bg-azul-claro">
+                <div class="card-header bg-turquesa text-white">
+                    <h5 class="mb-0">Combate 1</h5>
+                </div>
+                <div class="card-body">
+                    <div class="match" data-match-id="1">
+                        <div class="match-player d-flex justify-content-between align-items-center mb-2">
+                            <img src="https://via.placeholder.com/50" alt="Loco Rene" class="player-avatar rounded-circle">
+                            <span class="player-name">Loco Rene</span>
+                            <span class="player-score badge bg-amarillo">2</span>
+                        </div>
+                        <div class="match-player d-flex justify-content-between align-items-center">
+                            <img src="https://via.placeholder.com/50" alt="Samurai de Pudahuel" class="player-avatar rounded-circle">
+                            <span class="player-name">Samurai de Pudahuel</span>
+                            <span class="player-score badge bg-amarillo">1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-azul-oscuro text-white">
+                    <small>10 Jun - 15:00 - Arena Central</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card bg-azul-claro">
+              <div class="card-header bg-turquesa text-white">
+                  <h5 class="mb-0">Combate 1</h5>
+              </div>
+              <div class="card-body">
+                  <div class="match" data-match-id="1">
+                      <div class="match-player d-flex justify-content-between align-items-center mb-2">
+                          <img src="https://via.placeholder.com/50" alt="Loco Rene" class="player-avatar rounded-circle">
+                          <span class="player-name">Loco Rene</span>
+                          <span class="player-score badge bg-amarillo">2</span>
+                      </div>
+                      <div class="match-player d-flex justify-content-between align-items-center">
+                          <img src="https://via.placeholder.com/50" alt="Samurai de Pudahuel" class="player-avatar rounded-circle">
+                          <span class="player-name">Samurai de Pudahuel</span>
+                          <span class="player-score badge bg-amarillo">1</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="card-footer bg-azul-oscuro text-white">
+                  <small>10 Jun - 15:00 - Arena Central</small>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card bg-azul-claro">
+            <div class="card-header bg-turquesa text-white">
+                <h5 class="mb-0">Combate 1</h5>
+            </div>
+            <div class="card-body">
+                <div class="match" data-match-id="1">
+                    <div class="match-player d-flex justify-content-between align-items-center mb-2">
+                        <img src="https://via.placeholder.com/50" alt="Loco Rene" class="player-avatar rounded-circle">
+                        <span class="player-name">Loco Rene</span>
+                        <span class="player-score badge bg-amarillo">2</span>
+                    </div>
+                    <div class="match-player d-flex justify-content-between align-items-center">
+                        <img src="https://via.placeholder.com/50" alt="Samurai de Pudahuel" class="player-avatar rounded-circle">
+                        <span class="player-name">Samurai de Pudahuel</span>
+                        <span class="player-score badge bg-amarillo">1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer bg-azul-oscuro text-white">
+                <small>10 Jun - 15:00 - Arena Central</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="card bg-azul-claro">
+          <div class="card-header bg-turquesa text-white">
+              <h5 class="mb-0">Combate 1</h5>
+          </div>
+          <div class="card-body">
+              <div class="match" data-match-id="1">
+                  <div class="match-player d-flex justify-content-between align-items-center mb-2">
+                      <img src="https://via.placeholder.com/50" alt="Loco Rene" class="player-avatar rounded-circle">
+                      <span class="player-name">Loco Rene</span>
+                      <span class="player-score badge bg-amarillo">2</span>
+                  </div>
+                  <div class="match-player d-flex justify-content-between align-items-center">
+                      <img src="https://via.placeholder.com/50" alt="Samurai de Pudahuel" class="player-avatar rounded-circle">
+                      <span class="player-name">Samurai de Pudahuel</span>
+                      <span class="player-score badge bg-amarillo">1</span>
+                  </div>
+              </div>
+          </div>
+          <div class="card-footer bg-azul-oscuro text-white">
+              <small>10 Jun - 15:00 - Arena Central</small>
+          </div>
+      </div>
+  </div>
+    
+        <!-- Repeat the above structure for the other 3 matches, changing the details as needed -->
+    </div>
+          <!-- Add more rounds (Semi-Finals, Finals) -->
+ 
+
+      <div class="bracket-legend mt-5">
+          <h4 class="amarillo mb-3">Leyenda del Torneo</h4>
+          <div class="row">
+              <div class="col-md-3 mb-3">
+                  <div class="legend-item">
+                      <span class="legend-color bg-turquesa"></span>
+                      <span class="legend-text text-light">Cuartos de Final</span>
+                  </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                  <div class="legend-item">
+                      <span class="legend-color bg-amarillo"></span>
+                      <span class="legend-text text-light">Semi-Finales</span>
+                  </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                  <div class="legend-item">
+                      <span class="legend-color bg-azul-claro"></span>
+                      <span class="legend-text text-light">Final</span>
+                  </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                  <div class="legend-item">
+                      <span class="legend-color bg-success"></span>
+                      <span class="legend-text text-light">Ganador</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="tournament-rules mt-5">
+          <h4 class="amarillo mb-3">Reglas del Torneo</h4>
+          <ul class="text-light">
+              <li>Formato de eliminación directa</li>
+              <li>Cada combate dura 3 minutos</li>
+              <li>Victoria por KO o mayor puntuación</li>
+              <li>En caso de empate, ronda extra de 1 minuto</li>
+          </ul>
+      </div>
+  </div>
+</section>
+
+
+<!-- Sección de Biografía -->
+<div class="biography py-5 bg-azul-oscuro">
+  <div class="container">
+      <h2 class="text-center text-uppercase turquesa p600 pb-4">Biografía de Rene Puente</h2>
+      <div class="row align-items-center">
+          <div class="col-md-6">
+              <img src="https://via.placeholder.com/500" alt="Rene Puente" class="img-fluid rounded-circle mb-4">
+          </div>
+          <div class="col-md-6">
+              <div class="bio-content">
+                  <h3 class="amarillo mb-3">René Puente</h3>
+                  <p class="text-light mb-4">Rene Puente, conocido como "El Loco del Puente", es una leyenda en el mundo de los combates callejeros...</p>
+                  <div class="bio-timeline">
+                      <div class="timeline-item">
+                          <span class="year turquesa">1985</span>
+                          <p class="text-light">Nace en las calles de Santiago</p>
+                      </div>
+                      <div class="timeline-item">
+                          <span class="year turquesa">2005</span>
+                          <p class="text-light">Gana su primer torneo clandestino</p>
+                      </div>
+                      <div class="timeline-item">
+                          <span class="year turquesa">2023</span>
+                          <p class="text-light">Se une al Torneo de Cell como favorito</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="character-stats">
+                <div class="stat-bar">
+                  <span class="stat-label text-light">Fuerza</span>
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85</div>
+                  </div>
+                </div>
+                <div class="stat-bar">
+                  <span class="stat-label text-light">Velocidad</span>
+                  <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70</div>
+                  </div>
+                </div>
+                <div class="stat-bar">
+                  <span class="stat-label text-light">Técnica</span>
+                  <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- Sección de Noticias del Torneo -->
+<div class="tournament-news py-5 bg-amarillo">
+  <div class="container">
+      <h2 class="text-center text-uppercase azul-oscuro p600 pb-4">Últimas Noticias del Torneo</h2>
+      
+      <div id="newsCarousel" class="carousel slide news-carousel" data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Loco Rene en entrenamiento">
+                              <div class="card-body">
+                                  <h5 class="card-title">Loco Rene intensifica su entrenamiento</h5>
+                                  <p class="card-text">El favorito del torneo ha sido visto practicando nuevas técnicas...</p>
+                                  <a href="#" class="btn btn-primary">Leer más</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Samurai de Pudahuel">
+                              <div class="card-body">
+                                  <h5 class="card-title">Samurai de Pudahuel revela su arma secreta</h5>
+                                  <p class="card-text">En una entrevista exclusiva, el Samurai habla sobre su nueva técnica...</p>
+                                  <a href="#" class="btn btn-primary">Leer más</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Arena del torneo">
+                              <div class="card-body">
+                                  <h5 class="card-title">Se revela la nueva arena del torneo</h5>
+                                  <p class="card-text">Los organizadores han presentado el impresionante escenario para la final...</p>
+                                  <a href="#" class="btn btn-primary">Leer más</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Vendedor de Leña">
+                              <div class="card-body">
+                                  <h5 class="card-title">Vendedor de Leña sorprende en clasificatorias</h5>
+                                  <p class="card-text">El participante menos esperado ha logrado clasificar con una técnica innovadora...</p>
+                                  <a href="#" class="btn btn-primary">Leer más</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Entrenamiento especial">
+                              <div class="card-body">
+                                  <h5 class="card-title">Revelado el régimen de entrenamiento de Cell</h5>
+                                  <p class="card-text">Expertos analizan las rutinas de preparación del anfitrión del torneo...</p>
+                                  <a href="#" class="btn btn-primary">Leer más</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Reglas del torneo">
+                              <div class="card-body">
+                                  <h5 class="card-title">Nuevas reglas añadidas al torneo</h5>
+                                  <p class="card-text">Cell anuncia cambios de último minuto en la normativa del torneo...</p>
+                                  <a href="#" class="btn btn-primary">Leer más</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </div>
+</div>
+
+
+<!-- Sección de Patrocinadores -->
+<div class="sponsors py-5 bg-azul-oscuro">
+  <div class="container">
+      <h2 class="text-center text-uppercase turquesa p600 pb-4">Nuestros Patrocinadores</h2>
+      <div class="sponsor-slider">
+          <div class="sponsor-item">
+              <img src="path/to/sponsor1.png" alt="Sponsor 1" class="sponsor-logo">
+          </div>
+          <div class="sponsor-item">
+              <img src="path/to/sponsor2.png" alt="Sponsor 2" class="sponsor-logo">
+          </div>
+          <div class="sponsor-item">
+              <img src="path/to/sponsor3.png" alt="Sponsor 3" class="sponsor-logo">
+          </div>
+          <div class="sponsor-item">
+              <img src="path/to/sponsor4.png" alt="Sponsor 4" class="sponsor-logo">
+          </div>
+          <div class="sponsor-item">
+              <img src="path/to/sponsor5.png" alt="Sponsor 5" class="sponsor-logo">
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- Sección de Cuenta Regresiva -->
+<div class="countdown py-5 bg-azul-claro">
+  <div class="container">
+      <h2 class="text-center text-uppercase amarillo p600 pb-4">Cuenta Regresiva para el Torneo</h2>
+      <div id="countdown" class="text-center">
+          <div class="row">
+              <div class="col-md-3 col-6 mb-4">
+                  <div class="time-block">
+                      <span id="days" class="time-value display-1 turquesa p700"></span>
+                      <span class="time-label text-light p500">Días</span>
+                  </div>
+              </div>
+              <div class="col-md-3 col-6 mb-4">
+                  <div class="time-block">
+                      <span id="hours" class="time-value display-1 turquesa p700"></span>
+                      <span class="time-label text-light p500">Horas</span>
+                  </div>
+              </div>
+              <div class="col-md-3 col-6 mb-4">
+                  <div class="time-block">
+                      <span id="minutes" class="time-value display-1 turquesa p700"></span>
+                      <span class="time-label text-light p500">Minutos</span>
+                  </div>
+              </div>
+              <div class="col-md-3 col-6 mb-4">
+                  <div class="time-block">
+                      <span id="seconds" class="time-value display-1 turquesa p700"></span>
+                      <span class="time-label text-light p500">Segundos</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
   </main>
 
-  
-  <footer>
-    <!-- place footer here -->
+  <footer class="bg-azul-oscuro text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2023 Torneo de Cell. Todos los derechos reservados.</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <a href="#" class="text-light me-3"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="text-light me-3"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="text-light"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
   </footer>
+
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
@@ -107,6 +512,46 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="js/script.js"></script>
+  <script>
+    
+    // Código para la cuenta regresiva
+    
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 24, 2024 15:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    // If the count down is finished, write some text
+    // If the count down is finished, write some text
+if (distance < 0) {
+  clearInterval(x);
+  document.getElementById("countdown").innerHTML = '<h1 class="display-1 text-uppercase amarillo p700">¡El torneo ha comenzado!</h1>';
+}
+
+}, 1000);
+
+    // Puedes agregar la lógica de la cuenta regresiva aquí
   </script>
 </body>
 

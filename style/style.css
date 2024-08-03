@@ -76,3 +76,40 @@ header{
     background-image: url(../img/personajes.png);
     background-size: cover;
 }
+
+.news-carousel {
+    position: relative;
+    padding: 0 50px; /* Adjust this value as needed */
+}
+
+.news-carousel .carousel-control-prev,
+.news-carousel .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.news-carousel .carousel-control-prev {
+    left: -20px;
+}
+
+.news-carousel .carousel-control-next {
+    right: -20px;
+}
+
+.news-carousel .carousel-control-prev-icon,
+.news-carousel .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.sponsor-logo {
+    transition: filter 0.3s ease;
+}
+
+.sponsor-logo:hover {
+    filter: grayscale(100%);
+}
